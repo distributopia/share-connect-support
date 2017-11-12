@@ -1,0 +1,30 @@
+{
+  "name": "share-connect-support",
+  "version": "0.0.1",
+  "description": "Social buttons for distributed, self-hosted social services",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/dexverse/share-connect-support.git"
+  },
+  "author": "lostinlight",
+  "license": "AGPL-3.0",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "babel-preset-env": "^1.6.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^5.0.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.0"
+  }
+}

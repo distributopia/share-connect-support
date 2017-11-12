@@ -1,0 +1,308 @@
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Cosmetic styles for DEMO only */
+body {
+  font-family: "font-primary", "Segoe UI", "Open Sans", Ubuntu, Cantarell, Oxygen, "Helvetica Neue", BlinkMacSystemFont, Roboto, sans-serif;
+  background-color: #f5f6fa;
+  color: #333333;
+}
+
+h2,
+h4 {
+  margin-bottom: .5em;
+}
+
+.styling {
+  margin-left: 1em;
+  color: #313037;
+}
+
+.dex-buttons {
+  width: 70%;
+  margin: 1.5em auto;
+}
+
+@media screen and (max-width: 47.938em) {
+  .dex-buttons {
+    width: 85%;
+  }
+}
+/* end Cosmetic styles */
+
+/* Utility classes */
+.rounded {
+  border-radius: 6px;
+}
+
+.oval {
+  border-radius: 15px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.wo-text {
+  width: 34px;
+}
+/* end Utility classes */
+
+.dex-btn,
+.popup button {
+  cursor: pointer;
+}
+
+.dex-btn {
+  display: inline-block;
+  height: 34px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: .85rem;
+  margin: 0 .2em;
+  border: none;
+  padding-top: 4px;
+}
+
+.dex-btn span,
+.dex-icon {
+  vertical-align: middle;
+}
+
+.dex-btn,
+.dex-btn span {
+  font-weight: bold;
+}
+
+.share {
+  display: inline-block;
+  max-height: 40px;
+}
+
+.share .dex-btn:not(.wo-text),
+.support:not(.wo-text) {
+  padding: 4px 12px 4px 10px;
+}
+
+.share .dex-btn:not(.wo-text) .dex-icon,
+.support:not(.wo-text) .dex-icon {
+  margin-right: 8px;
+}
+
+.dex-icon {
+  fill: #ffffff;
+}
+
+.overlay,
+.hidden,
+.hidden + .popup {
+  display: none;
+}
+
+.hidden:checked + .popup {
+  position: absolute;
+  min-width: 255px;
+  margin-top: .8em;
+  padding: .5em;
+  z-index: 3;
+  background-color: #333;
+  border-radius: .5em;
+  display: inline-block;
+}
+
+/* popup triangle */
+.hidden:checked + .popup:before {
+  content: "";
+  position: absolute;
+  top: -.7em;
+  height: 0;
+  width: 0;
+  border-bottom: .8em solid #141414;
+  border-left: .8em solid transparent;
+  border-right: .8em solid transparent;
+  z-index: 3;
+}
+
+.popup input {
+  min-width: 190px;
+  height: 25px;
+}
+
+.popup button {
+  margin: 2.5px 0 2.5px 5px;
+  height: 28px;
+  width: 44px;
+}
+
+.popup label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.diaspora {
+  background-color: #222222;
+    &:hover {
+      background-color: #000000;
+    }
+}
+
+.mastodon {
+  background-color: #3088d4;
+    &:hover {
+      background-color: saturate(darken(#3088d4, 8%), 20%);
+    }
+}
+
+.hubzilla {
+  background-color: #43488a;
+    &:hover {
+      background-color: saturate(darken(#43488a, 5%), 5%);
+    }
+}
+
+.gnusocial {
+  background-color: #a22430;
+    &:hover {
+      background-color: saturate(darken(#a22430, 8%), 20%);
+    }
+}
+
+.friendica {
+  background-color: #ffb900;
+    &:hover {
+      background-color: saturate(darken(#ffb900, 4%), 15%);
+    }
+}
+
+.socialhome {
+  background-color: #4c4c4c;
+    &:hover {
+      background-color: saturate(darken(#4c4c4c, 5%), 5%);
+    }
+}
+
+.postactiv {
+  background-color: #ad68d5;
+    &:hover {
+      background-color: saturate(darken(#ad68d5, 5%), 5%);
+    }
+}
+
+.pumpio {
+  background-color: #000000;
+    &:hover {
+      background-color: #333;
+    }
+}
+
+.diaspora-bright {
+  background-color: #141414;
+    &:hover {
+      background-color: #000000;
+    }
+}
+
+.mastodon-bright {
+  background-color: #054dff;
+    &:hover {
+      background-color: #003cd1;
+    }
+}
+
+.hubzilla-bright {
+  background-color: #311b92;
+    &:hover {
+      background-color: #231367;
+    }
+}
+
+.gnusocial-bright {
+  background-color: #b90d1e;
+    &:hover {
+      background-color: #890a16;
+    }
+}
+
+.friendica-bright {
+  background-color: #ff8f00;
+    &:hover {
+      background-color: #ff7a00;
+    }
+}
+
+.socialhome-bright {
+  background-color: #303636;
+    &:hover {
+      background-color: #212727;
+    }
+}
+
+.postactiv-bright {
+  background-color: #b030f9;
+    &:hover {
+      background-color: #a20af7;
+    }
+}
+
+.support-liberapay {
+  background-color: #f6c915;
+  color: #0e0e0e;
+    &:hover {
+      background-color: saturate(darken(#f6c915, 6%), 9%);
+    }
+}
+
+.support-snowdrift {
+  background-color: #13628e;
+    &:hover {
+      background-color: saturate(darken(#13628e, 8%), 20%);
+    }
+}
+
+.support-ocollective {
+  background-color: #7fadf2;
+    &:hover {
+      background-color: saturate(darken(#7fadf2, 8%), 20%);
+    }
+}
+
+.support-gratipay {
+  background-color: #630;
+    &:hover {
+      background-color: saturate(darken(#630, 5%), 20%);
+    }
+}
+
+.support-liberapay .dex-icon {
+  fill: #0e0e0e;
+}
+
+@media screen and (max-width: 64em) {
+  .dex-btn {
+    margin: .5em .2em;
+  }
+}
+
+@media screen and (max-width: 47.938em) {
+  .share {
+    display: block;
+  }
+}

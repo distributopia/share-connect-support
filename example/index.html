@@ -1,0 +1,474 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <title>Free Network Buttons</title>
+  <meta charset="utf-8" />
+  <meta property="og:title" content="Free Network: above and beyond">
+  <link rel="stylesheet" media="all" href="styles.min.css">
+    <svg xmlns="https://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="icon-diaspora" viewBox="0 0 24 24">
+        <path d="M15.13 21.453l-2.172-3.033c-.58-.81-1.052-1.443-1.077-1.444-.025 0-.937 1.227-2.16 2.903-1.162 1.594-2.123 2.9-2.134 2.9-.034 0-4.193-2.93-4.203-2.962-.006-.015.935-1.395 2.09-3.07 1.154-1.672 2.1-3.065 2.1-3.097 0-.05-.375-.182-3.31-1.16-1.82-.608-3.326-1.11-3.348-1.12-.03-.01.143-.59.737-2.465.427-1.348.785-2.462.8-2.477.01-.014 1.593.492 3.514 1.125 1.922.634 3.51 1.15 3.53 1.15.018 0 .04-.032.05-.066.007-.036.024-1.67.035-3.635.014-1.962.035-3.585.047-3.605.018-.03.56-.036 2.54-.036 1.383 0 2.53.012 2.548.023.023.014.06 1.093.125 3.52.104 3.98.107 4.032.17 4.032.023 0 1.547-.51 3.383-1.132 1.837-.623 3.348-1.122 3.36-1.11.036.04 1.543 4.946 1.524 4.963-.01.01-1.542.534-3.406 1.166-2.562.87-3.39 1.16-3.396 1.196-.005.03.876 1.345 1.996 2.985 1.103 1.616 2.003 2.948 1.998 2.964-.012.035-4.14 3.075-4.175 3.075-.014.002-.537-.714-1.163-1.587v-.002z"/>
+      </symbol>
+
+      <symbol id="icon-mastodon" viewBox="0 0 24 24">
+        <path d="M23.605 10.01v10.205h-4.042v-9.907c0-2.09-.88-3.148-2.636-3.148-1.943 0-2.918 1.256-2.918 3.742v5.422H9.99v-5.42c0-2.487-.973-3.744-2.917-3.744-1.757 0-2.636 1.06-2.636 3.147v9.907H.395V10.008c0-2.085.53-3.742 1.597-4.97 1.1-1.225 2.54-1.853 4.328-1.853 2.07 0 3.635.795 4.67 2.386L12 7.26l1.007-1.69c1.036-1.59 2.604-2.385 4.67-2.385 1.79 0 3.23.63 4.33 1.854 1.066 1.225 1.597 2.883 1.597 4.97"/>
+      </symbol>
+
+      <symbol id="icon-gnusocial" viewBox="0 0 24 24">
+        <path d="M14.526 18.125l2.147-.12s.418 2.566-4.175 2.387c-2.923-.114-4.832-1.61-4.832-5.965s.537-5.07 4.653-5.25c4.115-.177 4.89 3.34 4.89 3.34h3.4s-.26-2.53-2.213-4.45c1.753-.97 1.715-2.836 1.652-4.02C19.99 2.914 17.594 0 17.036.497c-.56.5.924.986.804 3.432-.05 1.073.27 1.908-1.788 1.908-1.374 0-.805-1.223-2.536-1.223-1.018 0-1.404.65-1.55 1.186-.147-.534-.533-1.184-1.55-1.184-1.73 0-1.163 1.222-2.536 1.222-2.06 0-1.738-.835-1.79-1.91C5.97 1.484 7.453 1 6.895.5c-.555-.497-3.01 1.88-3.01 3.55 0 1.186-.066 3.06 1.68 4.028C3.91 9.694 3.58 11.98 3.612 14.008c.06 3.7 1.61 9.186 8.59 9.544 6.978.36 8.47-5.13 8.47-8.65h-7.335l1.19 3.223z"/>
+      </symbol>
+
+      <symbol id="icon-friendica" viewBox="0 0 24 24">
+        <path d="M7.525 23.347c-.847-.005-2.535-.86-2.908-3.15-.035-.216 0-15.89 0-15.89S5.2 1.086 8.01.65h11.433v6.37h-7.267v5.087h7.267v4.796h-7.267v6.445s-4.65-.002-4.65 0z"/>
+      </symbol>
+
+      <symbol id="icon-hubzilla" viewBox="0 0 24 24">
+        <path d="M20.125 1.403c1.26.622 2.423 1.818 3.03 3.11.24.578.492 1.148.44 2.49-.045 1.21-.13 1.686-.507 2.488-.998 2.13-2.962 3.554-5.205 3.7l-1.212.082-.425 1.686c-.357 1.404-.39 1.876-.39 1.876.405.43 1.325.696 1.71 1.692.525 1.015.465 2.456-.206 3.29-1.098 1.36-2.735 1.768-4.176 1.016-1.31-.688-1.997-2.39-1.588-3.88.098-.377-.016-.492-1.588-1.523L8.305 16.3l-.622.508C4.72 19.182.38 17.086.397 13.272c0-2.456 1.95-4.37 4.453-4.355 1.26 0 2.014.278 2.947 1.13l.687.622 1.523-.77 1.54-.753-.164-.54c-.23-.802-.18-2.586.098-3.487.312-1.08 1.278-2.423 2.195-3.094 1.867-1.377 4.42-1.623 6.45-.623zm-11.25 13.88l3.413 2.346s1.036-.873 2.44-.996l.874-3.71s-2.7-.874-3.465-2.77l-3.163 1.5s.748 1.868-.098 3.628z"/>
+      </symbol>
+
+      <symbol id="icon-socialhome" viewBox="0 0 24 24">
+        <path d="M8.237 8.054h7.187v9.265H8.238V8.053zm8.343 5.305h5.082v9.94H16.58v-9.94zM2.258 17.32H7.01V8.053H2.26l-.002 9.265zm13.204 5.98H2.295l.002-4.86h13.165v4.86zm1.155-15.246H21.7v4.158h-5.083V8.054zm5.955-3.216l-10.3-4.31c-.2-.138-1.42-.138-1.66 0L1.3 4.88c-.293.136-.447.454-.377.77.07.32 1.37 1.23 1.37 1.23H21.7s1.392-.997 1.392-1.38c0-.323-.222-.588-.52-.664z"/>
+      </symbol>
+
+      <symbol id="icon-postactiv" viewBox="0 0 24 24">
+        <path d="M1.77 1.1h5.455c.455 0 .81.113 1.066.34.27.213.44.483.514.81l1.45 9.91c.128.84.234 1.66.32 2.47.084.797.155 1.6.212 2.41.256-.795.526-1.59.81-2.387.298-.81.632-1.64 1-2.493l3.88-9.82 1.51.006S13.406 1.1 13.79 1.1h9.91l-.268.178L12.724 23.2H7.142L1.77 1.1z"/>
+      </symbol>
+
+      <symbol id="icon-pumpio" viewBox="0 0 24 24">
+        <path d="M7.53.397l12.56 11.617-12.56 11.59c-.54.01-3.297-1.226-3.297-1.226l12.56-10.362L4.234 1.69C4.604 1.444 7.254.398 7.53.397z"/>
+      </symbol>
+
+      <symbol id="icon-snowdrift" viewBox="0 0 24 24">
+        <path d="M7.803 16.282C5.54 16.18-.125 11.578.587 6.712 1.3 1.832 7.12.662 7.433.58c.865-.23 6.252-.323 8.006 0 1.61.295 5.506 1.688 5.364 2.083-.077.215-4.346 5.175-4.603 5.036-1.893-1.03-6.936-.803-7.924-.252-.434.242-1.524 1.177-1.524 2.434 0 1.52 2.065 3.552 3.088 4.074l-2.037 2.326z"/><path d="M16.197 7.718c2.264.103 7.927 4.705 7.216 9.57-.712 4.88-6.533 6.05-6.846 6.132-.865.23-6.252.322-8.006 0-1.61-.296-5.506-1.69-5.364-2.084.077-.215 4.346-5.175 4.603-5.036 1.893 1.03 6.936.802 7.924.25.434-.24 1.524-1.177 1.524-2.434 0-1.52-2.065-3.552-3.088-4.074l2.037-2.324z"/>
+      </symbol>
+
+      <symbol id="icon-ocollective" viewBox="0 0 24 24">
+        <path d="M21.47 5.44C22.764 7.3 23.52 9.56 23.52 12s-.758 4.7-2.05 6.56l-2.983-2.983c.584-1.062.918-2.28.918-3.577s-.332-2.516-.92-3.577l2.986-2.984zm-2.91-2.91l-2.983 2.983c-1.06-.585-2.28-.918-3.577-.918-4.09 0-7.405 3.315-7.405 7.405S7.91 19.405 12 19.405c1.298 0 2.516-.332 3.577-.92l2.984 2.985c-1.86 1.294-4.122 2.05-6.56 2.05C5.638 23.52.48 18.363.48 12S5.637.48 12 .48c2.437 0 4.7.757 6.56 2.05z"/><path d="M21.47 5.44C22.764 7.3 23.52 9.56 23.52 12s-.758 4.7-2.05 6.56l-2.983-2.983c.584-1.062.918-2.28.918-3.577s-.332-2.516-.92-3.577l2.986-2.984z"/>
+      </symbol>
+
+      <symbol id="icon-gratipay" viewBox="0 0 24 24">
+        <path d="M21.32 1.53c-2.623-1.786-5.115-.434-6.42 1.133-.488.582-1.32 1.27-2.898 1.27-1.576 0-2.41-.69-2.896-1.27C7.8 1.097 5.306-.255 2.684 1.53-.396 3.626.5 7.413 1.397 8.503L12 23.318 22.603 8.503c.896-1.09 1.79-4.88-1.287-6.973h.003z"/>
+      </symbol>
+
+      <symbol id="icon-liberapay" viewBox="0 0 24 24">
+        <path d="M7.68 19.418c-1.15 0-2.052-.15-2.708-.45-.656-.3-1.125-.708-1.41-1.226-.282-.518-.42-1.113-.412-1.785.008-.672.1-1.388.28-2.15L6.512.913 10.277.33 6.9 14.316c-.064.29-.1.56-.108.8-.008.244.036.46.134.645.097.186.263.336.498.45.235.113.563.185.984.218l-.728 2.988zm13.6-8.037c0 1.183-.193 2.265-.582 3.244-.39.98-.927 1.825-1.613 2.538-.688.713-1.514 1.267-2.477 1.664-.963.396-2.012.595-3.145.595-.55 0-1.1-.048-1.652-.145L10.72 23.67H7.124l4.03-16.804c.648-.194 1.39-.368 2.223-.522s1.737-.23 2.708-.23c.906 0 1.688.137 2.344.412s1.193.652 1.615 1.13c.42.477.732 1.036.935 1.675.202.64.303 1.324.303 2.053m-8.815 4.977c.275.065.615.097 1.02.097.63 0 1.206-.117 1.724-.352.518-.234.96-.563 1.324-.984.364-.42.647-.925.85-1.517.202-.59.304-1.242.304-1.955 0-.696-.154-1.287-.46-1.773-.31-.486-.843-.73-1.604-.73-.518 0-1.004.05-1.457.147l-1.702 7.068"/>
+      </symbol>
+    </svg>
+  </head>
+
+<body>
+  <section class="dex-buttons">
+    <h2>Share</h2>
+    <h4>With Text</h4>
+
+    <input name="popup" id="overlay" class="overlay" type="radio"> <!-- important: popup overlay -->
+
+    <div class="share">
+      <label class="dex-btn diaspora" title="Share this page on Diaspora" for="diaspora-share">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-diaspora"></use>
+        </svg><span>Diaspora</span>
+      </label>
+      <input name="popup" id="diaspora-share" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Diaspora URL (nerdpol.ch)" type="text"><button class="share-btn" type="submit" value="diaspora">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn mastodon" title="Share this page on Mastodon" for="mastodon-share">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-mastodon"></use>
+        </svg><span>Mastodon</span>
+      </label>
+      <input name="popup" id="mastodon-share" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Mastodon URL (witches.town)" type="text"><button class="share-btn" type="submit"  value="mastodon">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn hubzilla" title="Share this page on Hubzilla" for="hubzilla-share">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-hubzilla"></use>
+        </svg><span>Hubzilla</span>
+      </label>
+      <input name="popup" id="hubzilla-share" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Hubzilla URL (gerzilla.de)" type="text"><button class="share-btn" type="submit"  value="hubzilla">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn gnusocial" title="Share this page on GNU Social" for="gnusocial-share">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-gnusocial"></use>
+        </svg><span>GNU Social</span>
+      </label>
+      <input name="popup" id="gnusocial-share" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="GNU Social URL (quitter.se)" type="text"><button class="share-btn" type="submit"  value="gnusocial">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn friendica" title="Share this page on Friendica" for="friendica-share">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-friendica"></use>
+        </svg><span>Friendica</span>
+      </label>
+      <input name="popup" id="friendica-share" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Friendica URL (libranet.de)" type="text"><button class="share-btn" type="submit"  value="friendica">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn socialhome" title="Share this page on Socialhome" for="socialhome-share">
+        <svg role="img" class="dex-icon" width="17" height="17">
+          <use xlink:href="#icon-socialhome"></use>
+        </svg><span>Socialhome</span>
+      </label>
+      <input name="popup" id="socialhome-share" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Socialhome URL (socialhome.network)" type="text"><button class="share-btn" type="submit" value="socialhome">OK</button>
+      </span>
+    </div>
+  </section>
+
+  <section class="dex-buttons">
+    <h4>Alternative Text</h4>
+
+    <div class="share">
+      <label class="dex-btn oval diaspora" title="Share this page on Diaspora" for="diaspora-share2">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-diaspora"></use>
+        </svg><span>Spread it</span>
+      </label>
+      <input name="popup" id="diaspora-share2" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Diaspora URL (nerdpol.ch)" type="text"><button class="share-btn" type="submit" value="diaspora">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn oval mastodon" title="Share this page on Mastodon" for="mastodon-share2">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-mastodon"></use>
+        </svg><span>Toot it</span>
+      </label>
+      <input name="popup" id="mastodon-share2" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Mastodon URL (witches.town)" type="text"><button class="share-btn" type="submit"  value="mastodon">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn oval hubzilla" title="Share this page on Hubzilla" for="hubzilla-share2">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-hubzilla"></use>
+        </svg><span>Post it</span>
+      </label>
+      <input name="popup" id="hubzilla-share2" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Hubzilla URL (gerzilla.de)" type="text"><button class="share-btn" type="submit"  value="hubzilla">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn oval gnusocial" title="Share this page on GNU Social" for="gnusocial-share2">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-gnusocial"></use>
+        </svg><span>Bellow it</span>
+      </label>
+      <input name="popup" id="gnusocial-share2" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="GNU Social URL (quitter.se)" type="text"><button class="share-btn" type="submit"  value="gnusocial">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn oval friendica" title="Share this page on Friendica" for="friendica-share2">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-friendica"></use>
+        </svg><span>Share it</span>
+      </label>
+      <input name="popup" id="friendica-share2" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Friendica URL (libranet.de)" type="text"><button class="share-btn" type="submit"  value="friendica">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn oval socialhome" title="Share this page on Socialhome" for="socialhome-share2">
+        <svg role="img" class="dex-icon" width="17" height="17">
+          <use xlink:href="#icon-socialhome"></use>
+        </svg><span>Showcase it</span>
+      </label>
+      <input name="popup" id="socialhome-share2" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Socialhome URL (socialhome.network)" type="text"><button class="share-btn" type="submit" value="socialhome">OK</button>
+      </span>
+    </div>
+  </section>
+
+  <section class="dex-buttons">
+    <h4>Icons only</h4>
+    <div class="share">
+      <label class="dex-btn rounded  wo-text diaspora" title="Share this page on Diaspora" for="diaspora-share3">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-diaspora"></use>
+        </svg>
+      </label>
+      <input name="popup" id="diaspora-share3" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Diaspora URL (nerdpol.ch)" type="text"><button class="share-btn" type="submit" value="diaspora">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn rounded  wo-text mastodon" title="Share this page on Mastodon" for="mastodon-share3">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-mastodon"></use>
+        </svg>
+      </label>
+      <input name="popup" id="mastodon-share3" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Mastodon URL (witches.town)" type="text"><button class="share-btn" type="submit"  value="mastodon">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn rounded  wo-text hubzilla" title="Share this page on Hubzilla" for="hubzilla-share3">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-hubzilla"></use>
+        </svg>
+      </label>
+      <input name="popup" id="hubzilla-share3" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Hubzilla URL (gerzilla.de)" type="text"><button class="share-btn" type="submit"  value="hubzilla">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn rounded  wo-text gnusocial" title="Share this page on GNU Social" for="gnusocial-share3">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-gnusocial"></use>
+        </svg>
+      </label>
+      <input name="popup" id="gnusocial-share3" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="GNU Social URL (quitter.se)" type="text"><button class="share-btn" type="submit"  value="gnusocial">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn rounded  wo-text friendica" title="Share this page on Friendica" for="friendica-share3">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-friendica"></use>
+        </svg>
+      </label>
+      <input name="popup" id="friendica-share3" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Friendica URL (libranet.de)" type="text"><button class="share-btn" type="submit"  value="friendica">OK</button>
+      </span>
+    </div>
+    <div class="share">
+      <label class="dex-btn rounded  wo-text socialhome" title="Share this page on Socialhome" for="socialhome-share3">
+        <svg role="img" class="dex-icon" width="17" height="17">
+          <use xlink:href="#icon-socialhome"></use>
+        </svg>
+      </label>
+      <input name="popup" id="socialhome-share3" class="hidden" type="radio">
+      <span class="popup">
+        <label for="overlay"></label>
+        <input name="podurl" value="" placeholder="Socialhome URL (socialhome.network)" type="text"><button class="share-btn" type="submit" value="socialhome">OK</button>
+      </span>
+    </div>
+  </section>
+
+  <section class="dex-buttons">
+    <h2>Connect</h2>
+
+    <div style="margin-bottom: 1em;">
+      <h4>Classic</h4>
+      <a href="https://diasporafoundation.org" class="dex-btn wo-text circle diaspora" title="Connect on diaspora*" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-diaspora"></use>
+        </svg>
+      </a>
+
+      <a href="https://joinmastodon.org" class="dex-btn wo-text circle mastodon" title="Connect on Mastodon" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-mastodon"></use>
+        </svg>
+      </a>
+
+      <a href="https://project.hubzilla.org" class="dex-btn wo-text circle hubzilla" title="Connect on Hubzilla" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-hubzilla"></use>
+        </svg>
+      </a>
+
+      <a href="https://fediverse.kranglabs.com" class="dex-btn wo-text circle gnusocial" title="Connect on GNU Social" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-gnusocial"></use>
+        </svg>
+      </a>
+
+      <a href="https://friendi.ca" class="dex-btn wo-text circle friendica" title="Connect on Friendica" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-friendica"></use>
+        </svg>
+      </a>
+
+      <a href="https://socialhome.network" class="dex-btn wo-text circle socialhome" title="Connect on Socialhome" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="17" height="17">
+          <use xlink:href="#icon-socialhome"></use>
+        </svg>
+      </a>
+
+      <a href="http://www.postactiv.com" class="dex-btn wo-text circle postactiv" title="Connect on PostActiv" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-postactiv"></use>
+        </svg>
+      </a>
+
+      <a href="http://pump.io" class="dex-btn wo-text circle pumpio" title="Connect on Pumpio" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-pumpio"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div style="margin-bottom: 1em;">
+      <h4> Bright</h4>
+      <a href="https://snowdrift.coop" class="dex-btn wo-text circle diaspora-bright" title="Connect on diaspora*" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-diaspora"></use>
+        </svg>
+      </a>
+
+      <a href="https://joinmastodon.org" class="dex-btn wo-text circle mastodon-bright" title="Connect on Mastodon" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-mastodon"></use>
+        </svg>
+      </a>
+
+      <a href="https://project.hubzilla.org" class="dex-btn wo-text circle hubzilla-bright" title="Connect on Hubzilla" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-hubzilla"></use>
+        </svg>
+      </a>
+
+      <a href="https://fediverse.kranglabs.com" class="dex-btn wo-text circle gnusocial-bright" title="Connect on GNU Social" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-gnusocial"></use>
+        </svg>
+      </a>
+
+      <a href="https://friendi.ca" class="dex-btn wo-text circle friendica-bright" title="Connect on Friendica" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-friendica"></use>
+        </svg>
+      </a>
+
+      <a href="https://socialhome.network" class="dex-btn wo-text circle socialhome-bright" title="Connect on Socialhome" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="17" height="17">
+          <use xlink:href="#icon-socialhome"></use>
+        </svg>
+      </a>
+
+      <a href="http://www.postactiv.com" class="dex-btn wo-text circle postactiv-bright" title="Connect on PostActiv" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-postactiv"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div style="margin-bottom: 1em;">
+      <h4>Square</h4>
+      <a href="https://diasporafoundation.org" class="dex-btn wo-text diaspora" title="Connect on diaspora*" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-diaspora"></use>
+        </svg>
+      </a>
+
+      <a href="https://joinmastodon.org" class="dex-btn wo-text mastodon" title="Connect on Mastodon" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-mastodon"></use>
+        </svg>
+      </a>
+
+      <a href="https://project.hubzilla.org" class="dex-btn wo-text hubzilla" title="Connect on Hubzilla" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-hubzilla"></use>
+        </svg>
+      </a>
+
+      <a href="https://fediverse.kranglabs.com" class="dex-btn wo-text gnusocial" title="Connect on GNU Social" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-gnusocial"></use>
+        </svg>
+      </a>
+
+      <a href="https://friendi.ca" class="dex-btn wo-text friendica" title="Connect on Friendica" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-friendica"></use>
+        </svg>
+      </a>
+
+      <a href="https://socialhome.network" class="dex-btn wo-text socialhome" title="Connect on Socialhome" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="17" height="17">
+          <use xlink:href="#icon-socialhome"></use>
+        </svg>
+      </a>
+
+      <a href="http://www.postactiv.com" class="dex-btn wo-text postactiv" title="Connect on PostActiv" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-postactiv"></use>
+        </svg>
+      </a>
+
+      <a href="http://pump.io" class="dex-btn wo-text pumpio" title="Connect on Pumpio" target="_blank" rel="external noopener">
+        <svg role="img" class="dex-icon" width="16" height="16">
+          <use xlink:href="#icon-pumpio"></use>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="dex-buttons">
+    <h2>Support</h2>
+    <a href="https://opencollective.com" class="dex-btn support support-ocollective" title="Make a donation via Open Collective" target="_blank" rel="external noopener">
+      <svg role="img" class="dex-icon" width="16" height="16">
+        <use xlink:href="#icon-ocollective"></use>
+      </svg><span>Open Collective</span>
+    </a>
+
+    <a href="https://snowdrift.coop" class="dex-btn support support-snowdrift" title="Make a donation via Snowdrift" target="_blank" rel="external noopener">
+      <svg role="img" class="dex-icon" width="16" height="16">
+        <use xlink:href="#icon-snowdrift"></use>
+      </svg><span>Snowdrift</span>
+    </a>
+
+    <a href="https://liberapay.com" class="dex-btn support support-liberapay" title="Make a donation via Liberapay" target="_blank" rel="external noopener">
+      <svg role="img" class="dex-icon" x="7" y="7" width="16" height="16">
+        <use xlink:href="#icon-liberapay"></use>
+      </svg><span>Liberapay</span>
+    </a>
+
+    <a href="https://gratipay.com" class="dex-btn support support-gratipay" title="Make a donation via Gratipay" target="_blank" rel="external noopener">
+      <svg role="img" class="dex-icon" width="16" height="16">
+        <use xlink:href="#icon-gratipay"></use>
+      </svg><span>Gratipay</span>
+    </a>
+  </section>
+
+  <script src="share.min.js"></script>
+</body>
+</html>
