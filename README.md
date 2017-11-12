@@ -1,21 +1,23 @@
 
 # :penguin: share / connect / support buttons
 
-[DEMO page](...)
+`WARNING`: This is a __mirror repo__ from [GitLab](https://gitlab.com/dexverse/share-connect-support). Please, send your MRs there. Issues can still be opened here and are welcome.
 
-You are probably tired of seeing this everywhere
+*You are probably tired of seeing this everywhere*
 
 ![preview screen](uncool.png?raw=true)
 
-How about *this instead?
+*How about *this instead?*
 
 ![preview screen](cool.png?raw=true)
 
 _*inspired by [FSFE](https://fsfe.org/contribute/contribute.en.html) buttons_
 
-> Make your visitors wonder what those icons represent.
-> __Help promoting federated, privacy-friendly networks__.
+Make your visitors wonder what those icons represent.
 
+__Help promoting federated, privacy-friendly networks__.
+
+#### [DEMO page](https://dexverse.gitlab.io/share-connect-support)
 
 ## What are these?
 
