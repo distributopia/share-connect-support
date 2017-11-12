@@ -112,6 +112,7 @@ Following utility classes are provided to change button styling.
 For more examples see [demo page](/public/index.html).
 
 ## Examples
-Some websites using these buttons (to include yours, please, add a link below and open a pull request)
+Some websites using these buttons:
+*To include yours, please, add a link below and open a pull request in the main [GitLab](https://gitlab.com/dexverse/share-connect-support) repo*
 
 - [winterspirits.win](https://winterspirits.win)
