@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
       window.open(path + '/bookmarklet?url=' + link + '&title=' + title);
     } else if (service === 'hubzilla') {
       window.open(path + '/rpost?f=&url=' + link + '&title=' + title);
+    } else if (service === 'socialhome') {
+      window.open(path + '/bookmarklet?url=' + link + '&title=' + title);
     }
   };
 

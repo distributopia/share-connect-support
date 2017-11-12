@@ -32,10 +32,10 @@ gulp.task('scripts', function() {
              .pipe(eslint())
              .pipe(eslint.format())
              .pipe(concat('share.js'))
-             .pipe(gulp.dest('example/'))
+             .pipe(gulp.dest('public/'))
              .pipe(rename({suffix: '.min'}) )
              .pipe(uglify())
-             .pipe(gulp.dest('example/'))
+             .pipe(gulp.dest('public/'))
 });
 
 gulp.task('styles:lint', function() {
@@ -53,10 +53,10 @@ gulp.task('styles:build', function() {
              .pipe(customPlumber('Ouch! Error Running StyleLint'))
              .pipe(sass({errLogToConsole: true}))
              .pipe(autoprefixer(['last 3 versions', 'IE 10', 'iOS 9', 'Android 4']))
-             .pipe(gulp.dest('example/'))
+             .pipe(gulp.dest('public/'))
              .pipe(rename({ suffix: '.min' }))
              .pipe(cssnano())
-             .pipe(gulp.dest('example/'))
+             .pipe(gulp.dest('public/'))
 });
 
 gulp.task('watch', function() {
