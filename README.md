@@ -1,8 +1,6 @@
 
 # :penguin: share / connect / support buttons
 
-![we distribute](weDistribute.svg)
-
 [DEMO page](...)
 
 You are probably tired of seeing this everywhere
@@ -28,7 +26,7 @@ The collection of buttons is basically a set of SVGs and some styles.
 
 #### 1. Install
 
-Copy [`styles.min.css`](/example/styles.min.css) and [`share.min.js`](/example/share.min.js) into your project directory. You will also find unminified versions in [examples](/examples) folder.
+Copy [`styles.min.css`](/public/styles.min.css) and [`share.min.js`](/public/share.min.js) into your project directory. You will also find unminified versions in [examples](/examples) folder.
 
 > **Note:** Only sharing buttons require the script. If you intend to use connect or support buttons, add just the styles file.
 
@@ -50,7 +48,7 @@ Include `styles.min.css` with a `<link>` tag in the `<head>` of your page, and `
 </html>
 ```
 
-Include icons that you plan to use as `<symbol>` in `<head>`. You'll find all available SVGs in [example page](/example/index.html) code. This way of using SVGs provides easy manipulation.
+Include icons that you plan to use as `<symbol>` in `<head>`. You'll find all available SVGs in [example page](/public/index.html) code. This way of using SVGs provides easy manipulation.
 
 ```html
 <!-- ... -->
@@ -109,4 +107,9 @@ Following utility classes are provided to change button styling.
 
 4. `.wo-text` - fixed width (34px by default) for buttons without text
 
-For more examples see [demo page](/example/index.html).
+For more examples see [demo page](/public/index.html).
+
+## Examples
+Some websites using these buttons (to include yours, please, add a link below and open a pull request)
+
+- [winterspirits.win](https://winterspirits.win)
