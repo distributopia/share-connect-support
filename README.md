@@ -28,7 +28,7 @@ The collection of buttons is basically a set of SVGs and some styles.
 
 #### 1. Install
 
-Copy [`styles.min.css`](/public/styles.min.css) and [`share.min.js`](/public/share.min.js) into your project directory. You will also find unminified versions in [examples](/examples) folder.
+Copy [`styles.min.css`](/public/styles.min.css) and [`share.min.js`](/public/share.min.js) into your project directory. You will also find unminified versions in [public](/public) folder.
 
 > **Note:** Only sharing buttons require the script. If you intend to use connect or support buttons, add just the styles file.
 
