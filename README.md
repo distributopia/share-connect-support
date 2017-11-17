@@ -1,7 +1,7 @@
 
 # :penguin: share / connect / support buttons
 
-`WARNING`: This is a __mirror repo__ from [GitLab](https://gitlab.com/dexverse/share-connect-support). Please, send your MRs there. Issues can still be opened here and are welcome.
+`GitHub WARNING`: This is a __mirror repo__ from [GitLab](https://gitlab.com/dexverse/share-connect-support). Please, send your MRs there. Issues can still be opened here and are welcome.
 
 *You are probably tired of seeing this everywhere*
 
