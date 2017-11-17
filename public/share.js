@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var title = encodeURI(text).replace(/%20/g, '+');
     var path = validateProtocol(pod);
 
-    if (service === 'diaspora' || 'friendica' || 'socialhome') {
+    if (service === 'diaspora' || service === 'friendica' || service === 'socialhome') {
       window.open(path + '/bookmarklet?url=' + link + '&title=' + title);
     } else if (service === 'gnusocial') {
       window.open(path + '/notice/new?status_textarea=' + title + '&' + link);
@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
       window.open(path + '/share?text=' + title + '&' + link);
     } else if (service === 'hubzilla') {
       window.open(path + '/rpost?f=&url=' + link + '&title=' + title);
+    } else {
+      return;
     }
   };
 
