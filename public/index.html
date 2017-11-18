@@ -57,10 +57,14 @@
     </svg>
   </head>
 
-<body>
+<body id="chg">
+
   <section class="dex-buttons">
+  <button id="themeChanger" class="theme-changer">Change theme</button>
+
     <h2>Share</h2>
     <h4>With Text</h4>
+
 
     <input name="popup" id="overlay" class="overlay" type="radio"> <!-- important: popup overlay -->
 
@@ -470,5 +474,17 @@
   </section>
 
   <script src="share.min.js"></script>
+
+  <script>
+    (function() { // for DEMO purposes ONLY
+      const btn = document.getElementById('themeChanger');
+      btn.addEventListener('click', changeTheme, false);
+
+      function changeTheme() {
+        const b = document.getElementById('chg');
+        b.classList.toggle('light-theme');
+      }
+    })();
+  </script>
 </body>
 </html>

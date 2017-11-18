@@ -16,6 +16,24 @@ body {
   background-color: #242927;
   color: #f5f6fa; }
 
+body.light-theme {
+  background-color: #f5f6fa;
+  color: #242927; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+.theme-changer {
+  float: right;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #7887b0;
+  font-weight: bold;
+  outline: 0; }
+  .theme-changer:active, .theme-changer:focus {
+    outline: 0; }
+
 h2,
 h4 {
   margin-bottom: .5em; }
@@ -240,4 +258,4 @@ h4 {
 
 @media screen and (max-width: 47.938em) {
   .share {
-    display: block; } }
+    display: inline-block; } }
