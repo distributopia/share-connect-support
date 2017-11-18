@@ -13,12 +13,16 @@
 /* Cosmetic styles for DEMO only */
 body {
   font-family: "font-primary", "Segoe UI", "Open Sans", Ubuntu, Cantarell, Oxygen, "Helvetica Neue", BlinkMacSystemFont, Roboto, sans-serif;
-  background-color: #f5f6fa;
-  color: #333333; }
+  background-color: #242927;
+  color: #f5f6fa; }
 
 h2,
 h4 {
   margin-bottom: .5em; }
+
+h4 {
+  color: #7887b0;
+  font-size: .85rem; }
 
 .styling {
   margin-left: 1em;
@@ -210,7 +214,7 @@ h4 {
   background-color: #f6c915;
   color: #0e0e0e; }
   .support-liberapay:hover {
-    background-color: #ecbd00; }
+    background-color: #ffb900; }
 
 .support-snowdrift {
   background-color: #13628e; }
