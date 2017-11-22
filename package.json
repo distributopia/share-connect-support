@@ -1,13 +1,13 @@
 {
   "name": "share-connect-support",
   "version": "0.0.1",
-  "description": "Social buttons for distributed, self-hosted social services",
+  "description": "Social buttons for distributed, self-hosted services",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/dexverse/share-connect-support.git"
+    "url": "https://gitlab.com/distributopia/share-connect-support.git"
   },
   "author": "lostinlight",
-  "license": "AGPL-3.0",
+  "license": "GPL-3.0",
   "scripts": {},
   "dependencies": {},
   "devDependencies": {

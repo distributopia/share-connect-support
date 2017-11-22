@@ -1,7 +1,7 @@
 
 # :penguin: share / connect / support buttons
 
-`GitHub WARNING`: This is a __mirror repo__ from [GitLab](https://gitlab.com/dexverse/share-connect-support). Please, send your MRs there. Issues can still be opened here and are welcome.
+`GitHub WARNING`: This is a __mirror repo__ from [GitLab](https://gitlab.com/distributopia/share-connect-support). Please, send your MRs there. Issues can still be opened here and are welcome.
 
 *You are probably tired of seeing this everywhere*
 
@@ -17,7 +17,7 @@ Make your visitors wonder what those icons represent.
 
 __Help promoting federated, privacy-friendly networks__.
 
-#### [DEMO page](https://dexverse.gitlab.io/share-connect-support)
+#### [DEMO page](https://distributopia.gitlab.io/share-connect-support)
 
 ## What are these?
 
@@ -113,6 +113,6 @@ For more examples see [demo page](/public/index.html).
 
 ## Examples
 Some websites using these buttons:
-*To include yours, please, add a link below and open a pull request in the main [GitLab](https://gitlab.com/dexverse/share-connect-support) repo*
+*To include yours, please, add a link below and open a pull request in the main [GitLab](https://gitlab.com/distributopia/share-connect-support) repo*
 
 - [winterspirits.win](https://winterspirits.win)
