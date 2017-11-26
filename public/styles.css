@@ -12,9 +12,10 @@
 
 /* Cosmetic styles for DEMO only */
 body {
-  font-family: "font-primary", "Segoe UI", "Open Sans", Ubuntu, Cantarell, Oxygen, "Helvetica Neue", BlinkMacSystemFont, Roboto, sans-serif;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Open Sans", "Cantarell",  sans-serif;
   background-color: #242927;
-  color: #f5f6fa; }
+  color: #f5f6fa;
+  padding: 1.5em 0; }
 
 body.light-theme {
   background-color: #f5f6fa;
