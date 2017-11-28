@@ -1,75 +1,4 @@
 
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Cosmetic styles for DEMO only */
-body {
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Open Sans", "Cantarell",  sans-serif;
-  background-color: #242927;
-  color: #f5f6fa;
-  padding: 1.5em 0;
-}
-
-body.light-theme {
-  background-color: #f5f6fa;
-  color: #242927
-}
-
-button::-moz-focus-inner {
-  border: 0;
-}
-
-.theme-changer {
-  float: right;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  color: #7887b0;
-  font-weight: bold;
-  outline: 0;
-    &:active,
-    &:focus {
-      outline: 0;
-    }
-}
-
-h2,
-h4 {
-  margin-bottom: .5em;
-}
-
-h4 {
-  color: #7887b0;
-  font-size: .85rem;
-}
-
-.styling {
-  margin-left: 1em;
-  color: #313037;
-}
-
-.dex-buttons {
-  width: 70%;
-  margin: 1.5em auto;
-}
-
-@media screen and (max-width: 47.938em) {
-  .dex-buttons {
-    width: 85%;
-  }
-}
-/* end Cosmetic styles */
-
 /* Utility classes */
 .rounded {
   border-radius: 6px;
@@ -94,6 +23,7 @@ h4 {
 }
 
 .dex-btn {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Open Sans", "Cantarell",  sans-serif;
   display: inline-block;
   height: 34px;
   line-height: 1.6;
@@ -104,6 +34,7 @@ h4 {
   margin: 0 .2em;
   border: none;
   padding-top: 4px;
+  box-sizing: border-box;
 }
 
 .dex-btn span,
