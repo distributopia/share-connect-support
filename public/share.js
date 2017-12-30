@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (service === 'gnusocial') {
       window.open(path + '/notice/new?status_textarea=' + title + '&' + link);
     } else if (service === 'mastodon') {
-      window.open(path + '/share?text=' + title + '&' + link);
+      window.open(path + '/share?text=' + title + ' ' + link);
     } else if (service === 'hubzilla') {
       window.open(path + '/rpost?f=&url=' + link + '&title=' + title);
     } else {
